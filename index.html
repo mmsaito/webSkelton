@@ -1,7 +1,29 @@
 <html>
+        <meta charset="cp932" />
 	<title>githubでWebページを作る練習</title>
 	<script type="text/javascript" id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 	<body>
+		<h1>githubでWebページをつくる方法</h1>
+		<hr>
+        <h2>手順</h2>
+	本アカウント名 mmsaito，webサイトのレポジトリ名 webSkeltonで例を示す．
+	<ul>
+		<li> https://github.com/mmsaito?tab=repositories に行き，Newをクリックして新しいレポジトリwebSkeltonをつくる． 
+		<li> ローカルで適当なフォルダに index.htmlをつくり，その後
+<pre>
+git init (最初だけ)
+git remote add origin https://mmsaito.github.io/webSkelton.git (最初だけ)
+git add index.html
+git commit
+git push origin master
+</pre>
+
+<li> Setting-PagesについてBuild and deploymentで masterブランチをWeb作成用のブランチとして選ぶ．デフォルトではNoneになっており，ブラウザでアクセスすると <b>Not found</b>になる．
+	<li> ブラウザで https://mmsaito.github.io/webSkelton/ を開く．
+	</ul>
+
+
+	<h2>mathJaxによる数式の例</h2>
 		\[
 		\sin^2\theta + \cos^2\theta = 1 \tag{1}
 		\]
